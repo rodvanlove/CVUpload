@@ -37,7 +37,7 @@ namespace CVUpload.Utilities
                     new byte[] { 0xFF, 0xD8, 0xFF, 0xE1 },
                     new byte[] { 0xFF, 0xD8, 0xFF, 0xE8 },
                 }
-            },*/
+            },
             { ".zip", new List<byte[]>
                 {
                     new byte[] { 0x50, 0x4B, 0x03, 0x04 },
@@ -47,7 +47,7 @@ namespace CVUpload.Utilities
                     new byte[] { 0x50, 0x4B, 0x07, 0x08 },
                     new byte[] { 0x57, 0x69, 0x6E, 0x5A, 0x69, 0x70 },
                 }
-            },
+            },*/
             { ".txt", new List<byte[]>
                 {
                     new byte[] { 0xEF, 0xBB, 0xBF },

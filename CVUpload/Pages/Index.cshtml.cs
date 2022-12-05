@@ -19,7 +19,7 @@ namespace CVUpload.Pages
         }
 
         private readonly long _fileSizeLimit;
-        private readonly string[] _permittedExtensions = { ".txt", ".pdf", ".doc", ".docx", ".zip" };
+        private readonly string[] _permittedExtensions = { ".txt", ".pdf", ".doc", ".docx" };
         private readonly string _targetFilePath;
 
         public BufferedSingleFileUploadPhysicalModel(IConfiguration config, ILogger<BufferedSingleFileUploadPhysicalModel> logger)
