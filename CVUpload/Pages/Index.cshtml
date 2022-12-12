@@ -3,24 +3,35 @@
 @{
     ViewData["Title"] = "CV Upload";
 }
+<div class="row py-5">
+    <div class="col">
 
-<form enctype="multipart/form-data" method="post">
-    <dl>
-        <dt>
-            <label asp-for="FileUpload.FormFile"></label>
-        </dt>
-        <dd>
-            <input asp-for="FileUpload.FormFile" type="file">
-            <span asp-validation-for="FileUpload.FormFile"></span>
-        </dd>
-    </dl>
-    <input asp-page-handler="Upload" class="btn" type="submit" value="Upload" />
-</form>
+        <form enctype="multipart/form-data" method="post">
+            <dl>
+                <dt>
+                    <label asp-for="FileUpload.FormFile"></label>
+                </dt>
+                <dd>
+                    <input asp-for="FileUpload.FormFile" type="file">
+                    <span asp-validation-for="FileUpload.FormFile"></span>
+                </dd>
+            </dl>
+            <input asp-page-handler="Upload" class="btn" type="submit" value="Upload" />
+        </form>
 
-<p class="result">
-    @Model.Result
-    @Html.ValidationSummary(false)
-</p>
+        <p class="result">
+            @Model.Result
+            @Html.ValidationSummary(false)
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col p-sm-3 p-lg-5"><img src="/images/LBHoldings.png" class="img-fluid mx-auto d-block"></div>
+    <div class="col p-sm-3 p-lg-5"><img src="/images/movus-logo-black-1024x312.png" class="img-fluid mx-auto d-block"></div>
+    <div class="col p-sm-3 p-lg-5"><img src="/images/nls-1024x188.jpg" class="img-fluid mx-auto d-block"></div>
+    <div class="col p-sm-3 p-lg-5"><img src="/images/NCDV-Final-1024x673.png" class="img-fluid mx-auto d-block"></div>
+</div>
 
 @section Scripts {
     @{
